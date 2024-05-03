@@ -16,6 +16,7 @@ import 'package:flutter/material.dart';
 
 import 'home.dart';
 import 'login.dart';
+import 'register.dart';
 
 // TODO: Convert ShrineApp to stateful widget (104)
 class ShrineApp extends StatelessWidget {
@@ -25,9 +26,10 @@ class ShrineApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Shrine',
-      initialRoute: '/login',
+      initialRoute: '/register',
       routes: {
         '/login': (BuildContext context) => const LoginPage(),
+        '/register': (BuildContext context) => const RegisterPage(),
         // TODO: Change to a Backdrop with a HomePage frontLayer (104)
         '/': (BuildContext context) => const HomePage(),
         // TODO: Make currentCategory field take _currentCategory (104)
